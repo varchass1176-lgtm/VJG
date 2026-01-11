@@ -1,4 +1,4 @@
-# VJG Technologies - IT Staffing & Placement
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/09ef1204-1180-4960-b15b-5d15ca9fbc7c" /># VJG Technologies - IT Staffing & Placement
 
 A professional full-stack platform for VJG Technologies, a leading IT staffing and recruitment firm based in Bangalore.
 
@@ -53,3 +53,8 @@ A professional full-stack platform for VJG Technologies, a leading IT staffing a
 - `server/`: Express backend and database configuration.
 - `shared/`: Shared schemas and API route definitions.
 - `migrations/`: Database migration files.
+
+  
+
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/cc3a2bcb-2948-4dab-bf16-ffd0d9a3a45d" />
+
