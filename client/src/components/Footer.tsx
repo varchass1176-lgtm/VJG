@@ -16,7 +16,7 @@ export default function Footer() {
               <span className="font-display font-bold text-xl">Technologies</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Empowering careers through cutting-edge IT training and providing top-tier corporate solutions. Your future in tech starts here.
+              Connecting top-tier IT talent with leading technology companies. Your career success is our primary mission.
             </p>
             <div className="flex gap-4">
               <SocialIcon icon={<Facebook size={18} />} />
@@ -38,15 +38,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Courses */}
+          {/* Services */}
           <div>
-            <h3 className="font-display font-bold text-lg mb-6">Popular Courses</h3>
+            <h3 className="font-display font-bold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href="/courses" className="hover:text-primary transition-colors">Data Science & AI</Link></li>
-              <li><Link href="/courses" className="hover:text-primary transition-colors">Full Stack Development</Link></li>
-              <li><Link href="/courses" className="hover:text-primary transition-colors">Cloud Computing</Link></li>
-              <li><Link href="/courses" className="hover:text-primary transition-colors">Software Testing</Link></li>
-              <li><Link href="/courses" className="hover:text-primary transition-colors">Cyber Security</Link></li>
+              <li>Permanent Staffing</li>
+              <li>Contract Hiring</li>
+              <li>Executive Search</li>
+              <li>Career Counseling</li>
+              <li>Resume Building</li>
             </ul>
           </div>
 

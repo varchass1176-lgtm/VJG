@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Trophy, Users, Briefcase, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import CourseCard from "@/components/CourseCard";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
@@ -29,10 +28,9 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          {/* technology background students in lab */}
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
-            alt="Students collaborating" 
+            alt="Professionals collaborating" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/80 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent" />
@@ -50,34 +48,34 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              New Batches Starting Soon
+              Top Companies are Hiring Now
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight">
-              Master the Future of <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Technology</span>
+              Connecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Talent</span> with Tech Opportunity
             </h1>
             
             <p className="text-lg text-slate-300 max-w-xl leading-relaxed">
-              VJG Technologies bridges the gap between education and industry. Get trained by experts, work on live projects, and secure your dream job with our 100% placement assistance.
+              VJG Technologies bridges the gap between aspirants and industry. Get placed in top MNCs with our proven job placement program and dedicated career support.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/contact">
                 <Button size="lg" className="bg-primary hover:bg-blue-600 text-white px-8 h-14 rounded-xl text-lg shadow-lg shadow-primary/25">
-                  Start Your Journey
+                  Submit Resume
                 </Button>
               </Link>
-              <Link href="/courses">
+              <a href="#jobs">
                 <Button size="lg" variant="outline" className="bg-transparent border-white/30 text-white hover:bg-white/10 px-8 h-14 rounded-xl text-lg backdrop-blur-sm">
-                  Explore Courses
+                  Browse Openings
                 </Button>
-              </Link>
+              </a>
             </div>
 
             <div className="pt-8 flex items-center gap-8 text-sm font-medium text-slate-400 border-t border-white/10">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="text-accent h-5 w-5" />
-                <span>Industry Expert Trainers</span>
+                <span>MNC Placement Partners</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="text-accent h-5 w-5" />
@@ -86,7 +84,6 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Hero Stats/Card - Hidden on small mobile */}
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,10 +93,10 @@ export default function Home() {
             <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent opacity-30 blur-2xl rounded-full" />
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-2xl">
               <div className="grid grid-cols-2 gap-8">
-                <StatCard number="1000+" label="Students Placed" icon={<Users className="text-accent" />} />
-                <StatCard number="50+" label="Expert Mentors" icon={<GraduationCap className="text-blue-400" />} />
-                <StatCard number="150+" label="Hiring Partners" icon={<Briefcase className="text-green-400" />} />
-                <StatCard number="98%" label="Success Rate" icon={<Trophy className="text-yellow-400" />} />
+                <StatCard number="1000+" label="Candidates Placed" icon={<Users className="text-accent" />} />
+                <StatCard number="200+" label="MNC Partners" icon={<Briefcase className="text-blue-400" />} />
+                <StatCard number="15+" label="Years Experience" icon={<Trophy className="text-yellow-400" />} />
+                <StatCard number="98%" label="Placement Rate" icon={<CheckCircle2 className="text-green-400" />} />
               </div>
             </div>
           </motion.div>
@@ -111,32 +108,27 @@ export default function Home() {
         <div className="container-wrapper">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              {/* diverse team meeting in office */}
               <img 
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" 
-                alt="About Us" 
+                alt="Placement Process" 
                 className="rounded-2xl shadow-2xl relative z-10"
               />
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-full blur-3xl z-0" />
-              <div className="absolute -top-6 -left-6 w-32 h-32 border-4 border-accent/30 rounded-full z-0" />
             </div>
             
             <div className="space-y-6">
               <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-bold tracking-wide uppercase">
-                About VJG Technologies
+                Expert IT Staffing
               </div>
               <h2 className="text-4xl font-display font-bold text-slate-900">
-                Transforming Careers Through Excellence in Technology
+                Your Pathway to a Successful IT Career
               </h2>
               <p className="text-slate-600 leading-relaxed text-lg">
-                VJG Technologies is a premier IT solutions and training company dedicated to transforming careers and empowering individuals. We don't just teach technology; we create industry-ready professionals.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                Our mission revolves around empowering individuals with cutting-edge IT courses. Whether you are a fresh graduate looking for your first break or a professional seeking to upskill, we are your pathway to a promising future.
+                VJG Technologies is a leading IT solutions and placement firm. We specialize in identifying talent and matching them with the perfect roles in the industry.
               </p>
               
               <div className="grid sm:grid-cols-2 gap-4 pt-4">
-                {["Live Projects", "Corporate Training", "Mock Interviews", "Career Counseling"].map((item) => (
+                {["Permanent Staffing", "Contract Hiring", "Mock Interviews", "Resume Building"].map((item) => (
                   <div key={item} className="flex items-center gap-3 bg-slate-50 p-4 rounded-lg border border-slate-100">
                     <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                       <CheckCircle2 className="h-5 w-5" />
@@ -149,7 +141,7 @@ export default function Home() {
               <div className="pt-6">
                 <Link href="/about">
                   <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white transition-all">
-                    Read More About Us <ArrowRight className="ml-2 h-4 w-4" />
+                    About Our Services <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -158,15 +150,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COURSES GRID */}
-      <section className="section-padding bg-slate-50 relative overflow-hidden">
+      {/* JOBS SECTION */}
+      <section id="jobs" className="section-padding bg-slate-50 relative overflow-hidden">
         <div className="container-wrapper relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900">
-              Our Trending Courses
+              Hot Job Openings
             </h2>
             <p className="text-slate-600 text-lg">
-              Industry-designed curriculum to help you master the most in-demand skills.
+              Explore immediate opportunities with our premium hiring partners.
             </p>
           </div>
 
@@ -177,20 +169,24 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {courses.map((course, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <CourseCard {...course} />
+            {jobs.map((job, index) => (
+              <motion.div key={index} variants={fadeInUp} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
+                <div className="h-12 w-12 bg-primary/5 rounded-xl flex items-center justify-center text-primary mb-4">
+                  <Briefcase className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">{job.title}</h3>
+                <div className="flex items-center gap-2 text-sm text-slate-500 mb-4">
+                  <span className="bg-blue-50 text-blue-700 px-2 py-0.5 rounded uppercase font-bold text-[10px]">{job.type}</span>
+                  <span>•</span>
+                  <span>{job.location}</span>
+                </div>
+                <p className="text-slate-600 text-sm mb-6 line-clamp-2">{job.description}</p>
+                <Link href="/contact">
+                  <Button className="w-full" variant="outline">Apply Now</Button>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
-
-          <div className="text-center mt-12">
-            <Link href="/courses">
-              <Button size="lg" className="bg-primary hover:bg-blue-600 shadow-xl shadow-primary/20">
-                View All Courses
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -201,19 +197,19 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-display font-bold">
-                Your Success Is Our Priority
+                100% Placement Assistance
               </h2>
               <p className="text-slate-300 text-lg">
-                Join our 100% Placement Assistance program. We persist until you secure your dream position, ensuring you never leave empty-handed.
+                We persist until you secure your dream position. Our dedicated placement cell works round the clock to find the right match for you.
               </p>
               <div className="flex gap-8 py-4">
                 <div>
-                  <div className="text-4xl font-bold text-accent mb-1">45+</div>
-                  <div className="text-sm text-slate-400">Days Training</div>
+                  <div className="text-4xl font-bold text-accent mb-1">200+</div>
+                  <div className="text-sm text-slate-400">Companies</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-accent mb-1">100%</div>
-                  <div className="text-sm text-slate-400">Placement Assist</div>
+                  <div className="text-sm text-slate-400">Success Goal</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-accent mb-1">150+</div>
@@ -227,22 +223,16 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="flex items-center gap-3 p-3 bg-white/5 rounded-lg">
-                    <div className="h-10 w-10 rounded-full bg-slate-700 overflow-hidden">
-                      {/* Placeholder avatar */}
-                      <div className="w-full h-full flex items-center justify-center text-xs font-bold bg-gradient-to-br from-blue-500 to-purple-600">
-                        ST
-                      </div>
+                    <div className="h-10 w-10 rounded-full bg-slate-700 overflow-hidden flex items-center justify-center text-xs font-bold bg-gradient-to-br from-blue-500 to-purple-600">
+                      VJG
                     </div>
                     <div>
-                      <div className="text-sm font-bold">Student Name</div>
-                      <div className="text-xs text-slate-400">Placed at MNC</div>
+                      <div className="text-sm font-bold">Placed Candidate</div>
+                      <div className="text-xs text-slate-400">Software Engineer</div>
                     </div>
                   </div>
                 ))}
               </div>
-              <Button className="w-full mt-6 bg-accent text-slate-900 hover:bg-yellow-400 font-bold">
-                See More Success Stories
-              </Button>
             </div>
           </div>
         </div>
@@ -263,29 +253,23 @@ function StatCard({ number, label, icon }: { number: string, label: string, icon
   );
 }
 
-const courses = [
+const jobs = [
   {
-    title: "Data Science with Python",
-    description: "Master data analysis, visualization, and machine learning algorithms using Python. Includes real-world projects.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    duration: "3 Months",
-    rating: 4.9,
-    features: ["Python Programming", "Statistical Analysis", "Machine Learning"]
+    title: "Java Developer",
+    type: "Full Time",
+    location: "Bangalore",
+    description: "Looking for experienced Java developers with Spring Boot expertise for a top Tier-1 IT company."
   },
   {
-    title: "AI & Machine Learning",
-    description: "Deep dive into neural networks, deep learning, and building intelligent systems that can learn from data.",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
-    duration: "4 Months",
-    rating: 4.8,
-    features: ["Neural Networks", "TensorFlow & PyTorch", "NLP"]
+    title: "Data Analyst",
+    type: "Permanent",
+    location: "Hyderabad",
+    description: "Immediate opening for Data Analysts with strong SQL and Python skills for a leading fintech firm."
   },
   {
-    title: "Full Stack Java",
-    description: "Become a complete developer. Learn Core Java, Advanced Java, Spring Boot, and frontend technologies.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop",
-    duration: "4 Months",
-    rating: 4.7,
-    features: ["Java & Spring Boot", "React JS", "Database Design"]
+    title: "Software Tester",
+    type: "Contract",
+    location: "Remote",
+    description: "Urgent requirement for Automation Testers with Selenium and Java experience."
   }
 ];

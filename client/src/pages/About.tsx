@@ -14,7 +14,7 @@ export default function About() {
         <div className="container-wrapper text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">About VJG Technologies</h1>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Empowering the next generation of tech leaders through world-class training and innovative solutions.
+            Connecting top tech talent with leading organizations since 2010.
           </p>
         </div>
       </div>
@@ -28,10 +28,10 @@ export default function About() {
                 Who We Are
               </h2>
               <p className="text-slate-600 leading-relaxed">
-                VJG Technologies is a Bangalore-based IT solutions company dedicated to transforming careers and empowering individuals with cutting-edge Information Technology courses. At VJG, our core belief is simple yet powerful - we're driven by the unwavering commitment to harness the transformative potential of Information Technology within aspiring individuals.
+                VJG Technologies is a Bangalore-based IT solutions company dedicated to transforming careers and connecting individuals with their dream opportunities in Information Technology. At VJG, our core belief is simple yet powerful - we're driven by the unwavering commitment to bridge the gap between talented individuals and leading tech companies.
               </p>
               <p className="text-slate-600 leading-relaxed">
-                We're not just an IT service company; we're your pathway to a promising future in the tech industry. Our dedication lies in providing individuals with world-class IT training programs, ensuring they are well-prepared for success in the IT industry.
+                We're not just a recruitment company; we're your partner in professional growth. Our dedication lies in providing individuals with top-tier placement opportunities, ensuring they are well-placed for success in the IT industry.
               </p>
             </div>
             <div className="relative">
@@ -52,7 +52,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-3">Our Vision</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                To provide a promising future for everyone who chooses VJG and create global experts in India. We aim to be the bridge between talent and opportunity.
+                To provide a promising future for everyone who chooses VJG and create global experts in India. We aim to be the ultimate bridge between talent and industry.
               </p>
             </div>
             
@@ -62,7 +62,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-3">Our Mission</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                To empower individuals with cutting-edge IT courses and support their transformation into international knowledge experts through rigorous training.
+                To empower individuals by providing access to the best career opportunities and support their transformation into international experts through professional placement services.
               </p>
             </div>
 
@@ -80,19 +80,19 @@ export default function About() {
           {/* Why Choose Us */}
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl font-display font-bold text-slate-900 mb-4">Why Choose VJG Technologies?</h2>
-              <p className="text-slate-500">We provide more than just training; we provide a career launchpad.</p>
+              <h2 className="text-3xl font-display font-bold text-slate-900 mb-4">Why Partner with VJG Technologies?</h2>
+              <p className="text-slate-500">We provide more than just job leads; we provide a career launchpad.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-y-6 gap-x-12">
               {[
-                "Expert Leadership: Courses designed by industry veterans.",
+                "Expert Mentorship: Career guidance from industry veterans.",
                 "Transforming Lives: Join over 1000 success stories.",
-                "Proven Track Record: 150+ clients trust us.",
-                "Accelerated Skill Mastery: Master programs in just 45 days.",
+                "Proven Track Record: 150+ clients trust our staffing solutions.",
+                "Fast Placement: Average hiring cycle reduced by 40%.",
                 "Career Assurance: 100% placement assistance program.",
-                "Full-Fledged Training: From basics to advanced concepts.",
-                "Lifelong Skills: Prepare for today and the future."
+                "Comprehensive Support: From resume building to mock interviews.",
+                "Industry Network: Access to exclusive job openings."
               ].map((benefit, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />

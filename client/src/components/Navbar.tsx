@@ -20,7 +20,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Courses", href: "/courses" },
+    { name: "Job Openings", href: "/#jobs" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -60,7 +60,7 @@ export default function Navbar() {
               scrolled ? "text-slate-900" : "text-slate-900 lg:text-white"
             )}>
               Technologies
-              <span className="block text-xs font-normal opacity-80">Training & Services</span>
+              <span className="block text-xs font-normal opacity-80">IT Staffing & Placement</span>
             </div>
           </div>
         </Link>
